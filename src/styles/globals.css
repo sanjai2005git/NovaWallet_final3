@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg-dark: #080A0F;
+    --color-card: #0D111A;
+    --color-mint: #00F29D;
+  }
+
+  body {
+    background-color: #080A0F;
+    color: #F1F5F9;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom Glassmorphism & Cyber Gradients */
+.glass-panel {
+  background: rgba(13, 17, 26, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(19, 25, 38, 0.85);
+  border-color: rgba(0, 242, 157, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 242, 157, 0.08);
+}
+
+.glow-mint-border {
+  border: 1px solid rgba(0, 242, 157, 0.35);
+  box-shadow: 0 0 20px rgba(0, 242, 157, 0.15);
+}
+
+.text-gradient-mint {
+  background: linear-gradient(135deg, #00F29D 0%, #00D68A 50%, #00D2FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-radial-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(0, 242, 157, 0.12) 0%, rgba(8, 10, 15, 0) 70%);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080A0F;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00F29D;
+}
