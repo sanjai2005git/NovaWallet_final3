@@ -69,3 +69,4 @@ npm run test
 ## 📄 License
 
 MIT License © 2026 Nova Protocol Foundation.
+
